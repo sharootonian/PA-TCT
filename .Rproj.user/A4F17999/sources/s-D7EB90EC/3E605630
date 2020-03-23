@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1584750775282.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "3E605630",
+    "lastKnownWriteTime" : 1584756071,
+    "last_content_update" : 1584756071139,
+    "path" : "~/git/PA-TCT/Main.R",
+    "project_path" : "Main.R",
+    "properties" : {
+        "cursorPosition" : "57,0",
+        "scrollLine" : "28"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -34,8 +34,5 @@ for i = 1:length(v1)
 
 end
 
-xLL=-sum(L(:,1));
-yLL=-sum(L(:,2));
-
-    obj=xLL^.5 +yLL^.5;
+ obj=-sum(sum(L(:,1))+sum(L(:,2)));
 end

@@ -63,9 +63,9 @@ save('ModelSimulations/Sim_m2e1.mat','Sim_m2e1')
 save('ModelSimulations/Sim_m2e2.mat','Sim_m2e2')
 
 %% Plot Model 1 
-PlotM1(All_Betas);
+PlotM1(All_Betas); %fig 4a
 % Plot Model 2 
-PlotM2(All_Betas);
+PlotM2(All_Betas); %fig 4b
 %% Error Encoding Model
 %Level 1 fitting
 L1=modelEE_L1(data1,data2);
@@ -79,7 +79,7 @@ ub=[+inf +inf +inf +inf +inf];
         obfunc=@(x)modelEE_L2(x,L1.exp1.l,L1.exp1.a,data1.subj(i).a,data1.subj(i).b,data1.subj(i).vec3,data1.subj(i).alpha,data1.subj(i).hand);
         B_data1(i,:)=fmincon(obfunc,x1,[],[],[],[],lb,ub);
     end   
-
+    %exp2
     for(i= 1:length(data2.subj))
         obfunc=@(x)modelEE_L2(x,L1.exp2.l,L1.exp2.a,data2.subj(i).a,data2.subj(i).b,data2.subj(i).vec3,data2.subj(i).alpha,data2.subj(i).hand);
         B_data2(i,:)=fmincon(obfunc,x1,[],[],[],[],lb,ub);

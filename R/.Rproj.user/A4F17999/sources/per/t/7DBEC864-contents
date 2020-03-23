@@ -1,0 +1,70 @@
+source("R/Loading.R") 
+
+
+##Exp1
+#fit directory
+data = read.csv("C:/Users/Sev/Documents/git/PA-TCT/Data/Processed/Exp1Data.csv")
+#plot exp1 
+AEplot(data,1,"data")     #fig 2A
+DEplot(data,1,"data")     #fig 2B
+DEvsAEplot(data,1,"data") #fig 2C
+
+#model 1
+Sim_m1e1 <- readMat("C:/Users/Sev/Documents/git/PA-TCT/Modeling/ModelSimulations/Sim_m1e1.mat")$Sim.m1e1
+data$M1AE=ConvertSimulations(data,Sim_m1e1)$AE
+data$M1DE=ConvertSimulations(data,Sim_m1e1)$DE
+AEplot(data,1,"m1")     #fig 2D
+DEplot(data,1,"m1")     #fig 2E
+DEvsAEplot(data,1,"m1") #fig 2F
+
+#model 2
+Sim_m2e1 <- readMat("C:/Users/Sev/Documents/git/PA-TCT/Modeling/ModelSimulations/Sim_m2e1.mat")$Sim.m2e1
+data$M2AE=ConvertSimulations(data,Sim_m2e1)$AE
+data$M2DE=ConvertSimulations(data,Sim_m2e1)$DE
+AEplot(data,1,"m2")     #fig 2D
+DEplot(data,1,"m2")     #fig 2E
+DEvsAEplot(data,1,"m2") #fig 2F
+
+#Encoding-Error Model
+Sim_mEEe1 <- readMat("C:/Users/Sev/Documents/git/PA-TCT/Modeling/ModelSimulations/Sim_mEEe1.mat")$Sim.mEEe1
+data$EEMAE=ConvertSimulations(data,Sim_mEEe1)$AE
+data$EEMDE=ConvertSimulations(data,Sim_mEEe1)$DE
+AEplot(data,1,"mEE")     #fig 2D
+DEplot(data,1,"mEE")     #fig 2E
+DEvsAEplot(data,1,"mEE") #fig 2F
+
+
+##Exp2
+data = read.csv("C:/Users/Sev/Documents/git/PA-TCT/Data/Processed/Exp2Data.csv")
+#plot exp2 
+AEplot(data,2,"data")     #fig 3A
+DEplot(data,2,"data")     #fig 3B
+DEvsAEplot(data,2,"data") #fig 3c
+DEsize(data2,"data") #fig 5A
+DEsd(data2,"data")   #fig 5B
+DEvar(data2,"data")  #fig 5c
+
+#model 1
+Sim_m1e2 <- readMat("C:/Users/Sev/Documents/git/PA-TCT/Modeling/ModelSimulations/Sim_m1e2.mat")$Sim.m1e2
+data$M1AE=ConvertSimulations(data,Sim_m1e2)$AE
+data$M1DE=ConvertSimulations(data,Sim_m1e2)$DE
+AEplot(data,2,"m1")     #fig 2D
+DEplot(data,2,"m1")     #fig 2E
+DEvsAEplot(data,2,"m1") #fig 2F
+
+#model 2
+Sim_m2e2 <- readMat("C:/Users/Sev/Documents/git/PA-TCT/Modeling/ModelSimulations/Sim_m2e2.mat")$Sim.m2e2
+data$M2AE=ConvertSimulations(data,Sim_m2e2)$AE
+data$M2DE=ConvertSimulations(data,Sim_m2e2)$DE
+AEplot(data,2,"m2")     #fig 2D
+DEplot(data,2,"m2")     #fig 2E
+DEvsAEplot(data,2,"m2") #fig 2F
+
+#Encoding-Error Model
+Sim_mEEe2 <- readMat("C:/Users/Sev/Documents/git/PA-TCT/Modeling/ModelSimulations/Sim_mEEe2.mat")$Sim.mEEe2
+data$EEMAE=ConvertSimulations(data,Sim_mEEe2)$AE
+data$EEMDE=ConvertSimulations(data,Sim_mEEe2)$DE
+AEplot(data,2,"mEE")     #fig 2D
+DEplot(data,2,"mEE")     #fig 2E
+DEvsAEplot(data,2,"mEE") #fig 2F
+

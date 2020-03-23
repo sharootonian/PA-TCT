@@ -58,10 +58,6 @@ for i = 1:length(x3(:,1))
    %log like hood of y component for trail i
    L(i,2) = (-(log((2*pi*sigma^2)^.5))-(((x3(i,2)-x3t(i,2))^2)/(2*sigma^2)));
 end
-
-xLL=-sum(L(:,1));
-yLL=-sum(L(:,2));
-
-obj=xLL^.5 +yLL^.5;
+ obj=-sum(sum(L(:,1))+sum(L(:,2)));
 end
 
