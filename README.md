@@ -2,9 +2,9 @@
 
 Data and code for "Path Integration in Large-Scale Space and with Novel Geometries: Comparing Vector Addition and Encoding-Error Models"
 
-* Use Main.R to read the processed data and recreate the main figures in the manuscript.\
-* The R folder holds functions used for plotting and analysis.\
-* The Matlab folder includes functions for model fitting and simulations.\
+* Main.R recreate the main figures in the manuscript.
+* The R folder holds functions used for plotting and analysis.
+* The Matlab folder includes functions for model fitting and simulations.
 
 
 <pre>
