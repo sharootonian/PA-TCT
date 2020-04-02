@@ -6,12 +6,12 @@ Use Main.R to read the processed data and recreate the main figures in the manus
 The R folder holds functions used for plotting and analysis.
 The Matlab folder includes functions for model fitting and simulations.
 
-The processed data column index\
-<!-- UL -->
-* Triangle_index &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Triangle configurations represented but unique index numbers 
-* Size           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;length of the unguided side 
-* Angle.C/Angle.B/Angle.A  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;internal angles
-* Side.A_B/SideC_A/Side.B_C     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;length of sides
+The processed data column index
+<pre>
+* Triangle_index  Triangle configurations represented but unique index numbers 
+* Size            length of the unguided side 
+* Angle.C/Angle.B/Angle.A       internal angles
+* Side.A_B/SideC_A/Side.B_C     length of sides
 * Total_size    perimeter 
 * Hand          left-handed or right-handed trial (turn left or right)
 * Vision        if the trial had vision
@@ -35,7 +35,7 @@ The processed data column index\
 * M2DE      Model 2 simulated distance errors
 * EEMAE     Encoding-Error Model simulated angle errors
 * EEMDE     Encoding-Error Model simulated distance errors
-
+</pre>
 Additional framework and resources used not included here:\
 https://github.com/BrainVR/brainvr-unity-framework (Used to create the experiment)\
 https://github.com/BrainVR/brainvr-reader (Used to process raw data)\
