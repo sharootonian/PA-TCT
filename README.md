@@ -8,7 +8,7 @@ The Matlab folder includes functions for model fitting and simulations.
 
 
 <pre>
-The processed data column index
+Column index for the processed data
 
 Triangle_index  Triangle configurations represented but unique index numbers 
 Size            length of the unguided side 
